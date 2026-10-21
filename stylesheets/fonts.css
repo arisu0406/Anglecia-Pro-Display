@@ -1,8 +1,84 @@
+
+@font-face {
+  font-family: "AngleciaProText";
+  src: url("../fonts/AngleciaProText-Regular.ttf");
+}
+
+
 @font-face {
   font-family: "AngleciaProDisplay";
   src: url("../fonts/AngleciaProDisplay-Regular.ttf");
 }
+
 @font-face {
-  font-family: "AngleciaProText";
-  src: url("../fonts/AngleciaProText-Regular.ttf");
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/AngleciaProDisplay-Italic.ttf");
+}
+
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W03 SB It.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W03 Md It.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W03 Lt It.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W03 It.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W03 Bd It.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W01 XLt.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W01 SmBd.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W01 Md.ttf");
+}
+
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W01 Light.ttf");
+}
+
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display W01 Black.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display Medium.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display ExtraLight.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Display Bold.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/Anglecia Pro Disp W03 XLt It.ttf");
+}
+@font-face {
+  font-family: "AngleciaProDisplay";
+  src: url("../fonts/fonts/Anglecia Pro Disp W03 Blk It.ttf");
 }
