@@ -8,44 +8,55 @@ body {
   display: block;
   font-family: "AngleciaProText", sans-serif;
   background-color: #222121;
-  color: #fff;
   position: relative;
 }
 h1 {
   font-family: "AngleciaProDisplay";  
   font-size: 76px;
   line-height: 76px;
-  color: #fff;
   text-align: center;
-  margin-right: 357px;
-  margin-top: 357px;
-  padding-top: 319px;
+  text-transform: uppercase;
+  color: #fff;
   margin:auto;
-  width: 696px;
 }
 p{
     font-family: "AngleciaProText";
     font-size: 24 px;
     line-height: 24 px;
     color: #fff;
-    text-align: center;
-    margin-top: 469px;
-    margin-right: 303px;
-    margin: auto;
-    width: 674px;
 }
 /* СТИЛИ ДЛЯ 1 СТРАНИЦЫ*/
-.firstpage {
+.firstpage{
+  position:relative;
+  height:865px;
   display: flex;
-  justify-content:center;
-  vertical-align: middle;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
 }
-/* фон для 1 страницы */
-.scene {
-   max-width: 1280px;
+.firstpage_title{
+  position:absolute;
+  top:328px; right:359px;
+  font-weight: 500;
+  font-size: 76px;
+  text-align: center;
+}
+.firstpage_description{
+  position:absolute;
+  right: 399px; bottom: 351px;
+  font-weight: 400px;
+  font-size: 24px;
+  text-align: center;
+}
+.firstpage_image {
+
+   margin: 0;
+   padding: 0;
    background-image: url('C:\Users\Alisa\Desktop\Anglecia Pro Display\images\first page\scene-background.svg');
    background-size: cover; 
-    position: absolute;
-  z-index: -1;
-  top: 0px;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100vh;
+   z-index: -1;
 }
