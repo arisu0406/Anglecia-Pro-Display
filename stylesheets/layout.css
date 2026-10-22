@@ -2,13 +2,22 @@
   box-sizing: border-box;
 }
 
-body {
+body.overlay {
   width: 1280px;
   margin: 0px auto;
   display: block;
   font-family: "AngleciaProText", sans-serif;
   background-color: #222121;
   position: relative;
+}
+body.overlay::after{
+   content:"";
+   position: absolute;
+   top: 0;left: 0; right: 0;bottom:0;
+   background:url('../images\first page\/overlay.png')
+     top center/ 1440px auto no-repeat;
+   opacity: 0.5;
+   pointer-events:none
 }
 h1 {
   font-family: "AngleciaProDisplay";  
