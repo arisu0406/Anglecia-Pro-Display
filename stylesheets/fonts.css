@@ -39,7 +39,7 @@
   font-display:swap;
 }
 @font-face {
-  font-family: "AngleciaProDisplay";
+  font-family: "AngleciaProDisplayLtIt";
   src: url("../fonts/Anglecia Pro Display W03 Lt It.ttf");
   font-weight:350 ;
   font-style:italic ;
@@ -60,7 +60,7 @@
   font-display:swap;
 }
 @font-face {
-  font-family: "AngleciaProDisplay";
+  font-family: "AngleciaProDisplayXlt";
   src: url("../fonts/Anglecia Pro Display W01 XLt.ttf");
   font-weight: 300;
   font-style:normal ;
@@ -82,7 +82,7 @@
 }
 
 @font-face {
-  font-family: "AngleciaProDisplay";
+  font-family: "AngleciaProDisplayLt";
   src: url("../fonts/Anglecia Pro Display W01 Light.ttf");
   font-weight: 350;
   font-style:normal ;
