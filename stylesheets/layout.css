@@ -13,14 +13,23 @@ body.overlay::after{
    pointer-events:none;
    z-index:999999;
 }
-body{
-  width: 1280px;
-  margin: 0px auto;
+
+  html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
   display: block;
   font-family: "AngleciaProText", sans-serif;
   background-color: #222121;
   position: relative;
+  overflow-x: hidden;
 }
+
 
 h1 {
   font-family: "AngleciaProDisplay";  
@@ -44,58 +53,76 @@ h2{
 }
 p{
     font-family: "AngleciaProText";
-    font-size: 24 px;
-    line-height: 24 px;
-    font-weight: 400px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
     line-height: 24px;
     color: #fff;
 }
 /* СТИЛИ ДЛЯ 1 СТРАНИЦЫ*/
-.firstpage{
-  position:relative;
-  height:865px;
+.firstpage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 844px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
-.firstpage_title{
-  position:absolute;
-  top:328px; right:359px;
-  font-weight: 500;
-  font-size: 76px;
-  text-align: center;
-}
-.firstpage_description{
-  position:absolute;
-  right: 399px; bottom: 351px;
-  font-weight: 400px;
-  font-size: 24px;
-  text-align: center;
-}
-.firstpage_image {
 
-   margin: 0;
-   padding: 0;
-   background-image: url('../images\first page\scene-background.svg');
-   background-size: cover; 
-   background-position: center;
-   background-repeat: no-repeat;
-   z-index: -1;
-   display: block;
-   width: 100%;
-   height: 100vh;
-   object-fit: cover;
-   object-position: center;
+.firstpage_image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.firstpage_image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position: center;
+}
+
+.firstpage_title {
+  position: absolute;
+  z-index: 1;
+  top: 41%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: 0;
+  font-family: "AngleciaProDisplay", serif;
+  font-size: 76px;
+  line-height: 76px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.firstpage_description {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
 }
 /* СТИЛИ О ШРИФТЕ*/
 .aboutfont{
 
- display: flex;
- position: relative;
- height: 1188px;
-overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 1400px;
+  display: flex;
+
 }
 
 /* Общий контейнер текста */
@@ -143,21 +170,27 @@ overflow: hidden;
   word-break: normal;
   
 }
-.aboutfont_image {
 
-   margin: 0;
-   padding: 0;
-   background-image: url('../images/first page/aboutfont.svg');
-   background-size: cover; 
-   background-position: center;
-   background-repeat: no-repeat;
-   height: 100vh;
-   z-index: -1;
+.aboutfont_image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
 }
+
+.aboutfont_image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .letters {
   position: absolute;
   width: 100%;
-  height: 1050px;
+  height: 1200px;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -187,8 +220,8 @@ overflow: hidden;
   font-style: italic;
   color: #fff;
   transform: rotate(-39deg);
-  left: 237px ;
-  top:657px;
+  left: 287px ;
+  top:667px;
 }
 .p_e_1 {
   font-size:270px;
@@ -196,7 +229,7 @@ overflow: hidden;
   font-family: "AngleciaProDisplay";
   color: #fff;
   transform: rotate(7deg);
-  left: 370px ;
+  left: 393px ;
   top:481px;
 }
 .p_a {
@@ -205,7 +238,7 @@ overflow: hidden;
   font-family: "AngleciaProDisplayXlt";
   color: #fff;
   transform: rotate(40deg);
-  left: 440px ;
+  left: 504px ;
   top:560px;
 }
 .p_t_2 {
@@ -214,8 +247,8 @@ overflow: hidden;
   font-family: "AngleciaProDisplay";
   color: #D6AA60;
   transform: rotate(35deg);
-  left: 630px ;
-  top:388px;
+  left: 745px ;
+  top:390px;
 }
 .p_R {
   font-size:575px;
@@ -224,7 +257,7 @@ overflow: hidden;
   font-style: italic;
   color: #fff;
   transform: rotate(-3deg);
-  left: 650px ;
+  left: 828px ;
   top:515px;
 }
 .p_e_2 {
@@ -233,14 +266,13 @@ overflow: hidden;
   font-family: "AngleciaProDisplayXlt";
   color: #fff;
   transform: rotate(-19deg);
-  left: 1000px ;
+  left: 1195px ;
   top:770px;
 }
 /* СТИЛИ ЯЗЫКИ*/
 .languages{
-
- display: flex;
  position: relative;
+ width: 100%;
  height: 1080px;
  overflow: hidden;
 }
@@ -248,16 +280,17 @@ overflow: hidden;
   position: absolute;
   top: 105px;
   left: 64px;
+  z-index: 2;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  width: 800px;
-  height: 652px;
+
+  width: min(800px, 90%)
 
 }
 .languages_title{
-  display: block;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -269,53 +302,74 @@ overflow: hidden;
   
 }
 .aboutfont_description{
-  display: block;
   margin: 0;
   padding: 0;
-
   width: 100%;
-
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
-
   white-space: normal;
   overflow-wrap: normal;
   word-break: normal;
   
 }
+/* Табличка с масками */
 .table {
-   margin: 0 auto;
-   padding: 0;
-   background-repeat: no-repeat;
-   height: 100vh;
-   z-index: -1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top:289px;
-   z-index: -1;
+  position: absolute;
 
+  width: min(756px, 90vw);
+  height: 920px;
+
+  top: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.table img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: fill;
+  z-index: 0;
+}
+
+/* Список  */
 .languagespisok {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 70%;
+  left: 51%;
   transform: translate(-50%, -50%);
+
+  z-index: 1;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 30px;
 
-  width: 200px;
+  width: 80%;
   margin: 0;
   padding: 0;
+
+  list-style: none;
   font-family: "AngleciaProDisplay", serif;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 400;
   color: #75021F;
   text-align: center;
+}
+
+.languagespisok li {
+  margin: 0;
+  padding: 0;
 }
