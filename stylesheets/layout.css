@@ -2,7 +2,18 @@
   box-sizing: border-box;
 }
 
-body.overlay {
+body.overlay{position: relative;}
+body.overlay::after{
+   content:"";
+   position: absolute;
+   top: 0;left: 0; right: 0;bottom:0;
+   background:url('../images/first page/overlay.png')
+     top center/ 1280px auto no-repeat;
+   opacity: 0.5;
+   pointer-events:none;
+   z-index:999999;
+}
+body{
   width: 1280px;
   margin: 0px auto;
   display: block;
@@ -10,15 +21,7 @@ body.overlay {
   background-color: #222121;
   position: relative;
 }
-body.overlay::after{
-   content:"";
-   position: absolute;
-   top: 0;left: 0; right: 0;bottom:0;
-   background:url('../images\first page\/overlay.png')
-     top center/ 1440px auto no-repeat;
-   opacity: 0.5;
-   pointer-events:none
-}
+
 h1 {
   font-family: "AngleciaProDisplay";  
   font-size: 76px;
@@ -28,6 +31,16 @@ h1 {
   text-transform: uppercase;
   color: #fff;
   margin:auto;
+}
+h2{
+  font-family: "AngleciaProDisplay";
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  margin: auto;
 }
 p{
     font-family: "AngleciaProText";
@@ -84,7 +97,7 @@ overflow: hidden;
 /* Общий контейнер текста */
 .content {
   position: absolute;
-  top: 120px;
+  top: 105px;
   left: 64px;
 
   display: flex;
@@ -103,9 +116,10 @@ overflow: hidden;
   width: 100%;
 
   font-weight: 400;
-  font-size: 76px;
-  line-height: 76px;
+  font-size: 64px;
+  line-height: 64px;
   text-align: left;
+  font-variant:uppercase;
   
 }
 .aboutfont_description{
