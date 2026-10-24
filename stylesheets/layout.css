@@ -14,23 +14,16 @@ body.overlay::after{
    z-index:999999;
 }
 
-  html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
-}
 
 body {
+  width: 1440px;
   display: block;
-  font-family: "AngleciaProText", sans-serif;
+  margin: 0 auto;
+  justify-content: center; /* горизонтальное выравнивание */
+  align-items: center; /* вертикальное выравнивание */
+  font-family: "AngleciaProDisplay";
   background-color: #222121;
-  position: relative;
-  overflow-x: hidden;
 }
-
-
 h1 {
   font-family: "AngleciaProDisplay";  
   font-size: 76px;
@@ -546,18 +539,21 @@ p{
   min-width: 565px;
   z-index: 3;
 }
-/* ===== СТИЛИ НАЧЕРТАНИЯ ===== */
-.typefaces{
+/* СЕКЦИЯ НАЧЕРТАНИЯ */
 
+.typefaces {
   position: relative;
   width: 100%;
-  height: 100vh;
   min-height: 1027px;
-  display: flex;
-
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #222121;
+  box-sizing: border-box;
 }
 
-/* Общий контейнер текста */
+/* ЗАГОЛОВОК И ОПИСАНИЕ */
+
 .content3 {
   position: absolute;
   top: 105px;
@@ -566,39 +562,199 @@ p{
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-
   width: 701px;
-
-}
-.typefaces_title{
-  display: block;
   margin: 0;
   padding: 0;
+  z-index: 5;
+  box-sizing: border-box;
+}
 
+.typefaces_title {
+  display: block;
   width: 100%;
-
+  margin: 0;
+  padding: 0;
+  font-family: "AngleciaProDisplay", serif;
   font-weight: 400;
   font-size: 64px;
   line-height: 64px;
   text-align: left;
-  text-transform:uppercase;
-  
+  text-transform: uppercase;
 }
-.typefaces_description{
+
+.typefaces_description {
   display: block;
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "AngleciaProText";
-  width: 100%;
-
+  font-family: "AngleciaProText", serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
-
   white-space: normal;
   overflow-wrap: normal;
   word-break: normal;
-  
 }
-    
+
+/* ЗАДНИЕ ЛИСТЫ */
+
+.typefaces_backimage {
+  position: absolute;
+  top: 356px;
+  left: 64px;
+  width: calc(100% - 136px);
+  height: 650px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.typefaces_backimage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* ЦЕНТРАЛЬНЫЙ ЛИСТ */
+
+.repetoire {
+  position: absolute;
+  top: 296px;
+  left: 50%;
+  width: 500px;
+  height: 732px;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.repetoire img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* СПИСКИ НА ЦЕНТРАЛЬНОМ ЛИСТЕ */
+
+.spisokdata,
+.spisoktypefaces,
+.spisoktime {
+  position: absolute;
+  top: 424px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  height: 558px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+/* Общие параметры пунктов */
+
+.spisokdata li,
+.spisoktypefaces li,
+.spisoktime li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+  height: 27px;
+  margin: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/* Даты — левая колонка */
+
+.spisokdata {
+  left: calc(50% - 250px + 20px);
+  width: 124px;
+  gap: 13px;
+
+  font-family: "AngleciaProText", serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #a0002b;
+}
+
+/* Начертания — центральная колонка */
+
+.spisoktypefaces {
+  left: calc(50% - 125px);
+  width: 249px;
+  gap: 13px;
+  font-size: 24px;
+  line-height: 27px;
+  color: #222121;
+}
+
+.spisoktypefaces li {
+  width: 100%;
+}
+
+/* Время — правая колонка */
+
+.spisoktime {
+  left: calc(50% + 125px);
+  width: 105px;
+  gap: 13px;
+
+  font-family: "AngleciaProText", serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #a0002b;
+}
+.Xlt{
+  font-family:"AngleciaProDisplayXlt";
+  font-size: 24px;
+  font-weight: 300;
+}
+.XltIt{
+  font-family:"AngleciaProDisplayXlt";
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+}
+.XltIt{
+  font-family:"AngleciaProDisplayXlt";
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+}
+.Lt{
+  font-family:"AngleciaProDisplayLt";
+  font-size: 24px;
+  font-weight: 350;
+}
+.LtIt{
+  font-family:"AngleciaProDisplayLtIt";
+  font-size: 24px;
+  font-weight: 350;
+  font-style: italic;
+}
+.Rg{
+  font-family:"AngleciaProDisplay";
+  font-size: 24px;
+  font-weight: 400;
+}
+.It{
+  font-family:"AngleciaProDisplay";
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+}
+
