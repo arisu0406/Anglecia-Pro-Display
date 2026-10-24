@@ -757,4 +757,47 @@ p{
   font-weight: 400;
   font-style: italic;
 }
-
+.Md{
+  font-family:"AngleciaProDisplayMedium";
+  font-size: 24px;
+  font-weight: 500;
+}
+.MdIt{
+  font-family:"AngleciaProDisplayMdIt";
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+}
+.Sb{
+  font-family:"AngleciaProDisplaySb";
+  font-size: 24px;
+  font-weight: 600;
+}
+.SbIt{
+  font-family:"AngleciaProDisplaySbIt";
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+}
+.Bd{
+  font-family:"AngleciaProDisplayBold";
+  font-size: 24px;
+  font-weight: 700;
+}
+.BdIt{
+  font-family:"AngleciaProDisplayBdIt";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+}
+.Black{
+  font-family:"AngleciaProDisplayBlack";
+  font-size: 24px;
+  font-weight: 900;
+}
+.BlackIt{
+  font-family:"AngleciaProDisplayBlkIt";
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+}
